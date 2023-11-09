@@ -1,0 +1,69 @@
+body::before {
+    content: "";
+    background-image: url('link1.jpeg');
+    filter: blur(70px);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.d-circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.d-imgLogo {
+    transition: transform 0.2s; 
+}
+
+.d-imgLogo:hover {
+    transform: scale(1.1); 
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.d-zoom {
+    transition: transform .2s;
+    border-radius: 10px 10px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px;
+    width: 610px;
+    margin: 0 auto;
+}
+  
+.d-zoom:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+
+
