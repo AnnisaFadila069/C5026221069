@@ -23,4 +23,10 @@ class DosenController extends Controller
 
     	return view('biodata',['nama' => $nama, 'alamat' => $alamat, 'umur' => $umur]);
     }
+
+    public function showtime($jam){
+
+    	return $jam;
+
+    }
 }

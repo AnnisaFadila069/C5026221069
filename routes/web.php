@@ -81,3 +81,5 @@ Route::get('Wardah-LandingPage/prototype', function () {
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index' );
 
 Route::get('biodata', 'App\Http\Controllers\DosenController@biodata' );
+
+Route::get('jam/{jam}', 'App\Http\Controllers\DosenController@showtime' );
