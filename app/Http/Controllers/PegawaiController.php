@@ -11,7 +11,7 @@ class PegawaiController extends Controller
 	public function index()
 	{
     	// mengambil data dari table pegawai
-		//$pegawai = DB::table('pegawai')->get();
+		// $pegawai = DB::table('pegawai')->get();
         $pegawai = DB::table('pegawai')->paginate(15); //agar tersortir 15 halaman
 
     	// mengirim data pegawai ke view index
@@ -78,6 +78,7 @@ class PegawaiController extends Controller
 			'pegawai_umur' => $request->umur,
 			'pegawai_alamat' => $request->alamat
 		]);
+
 		// alihkan halaman ke halaman pegawai
 		return redirect('/pegawai');
 	}
@@ -90,5 +91,14 @@ class PegawaiController extends Controller
 
 		// alihkan halaman ke halaman pegawai
 		return redirect('/pegawai');
+	}
+
+    // method untuk lihat data pegawai
+	public function lihat($id)
+	{
+		// mengambil data pegawai berdasarkan id yang dipilih
+		$pegawai = DB::table('pegawai')->where('pegawai_id',$id)->get();
+		// passing data pegawai yang didapat ke view lihat.blade.php
+		return view('lihat',['pegawai' => $pegawai]);
 	}
 }
