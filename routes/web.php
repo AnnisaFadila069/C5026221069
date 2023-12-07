@@ -109,3 +109,10 @@ Route::get('/pegawai/lihat/{id}','App\Http\Controllers\PegawaiController@lihat')
 
 //seacrh
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
+
+//route CRUD dari keranjangbelanja
+Route::get('/keranjangbelanja', 'App\Http\Controllers\KeranjangBelanjaController@indexx');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangBelanjaController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangBelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangBelanjaController@hapus');
+
