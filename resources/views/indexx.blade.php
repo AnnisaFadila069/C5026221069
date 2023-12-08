@@ -2,6 +2,7 @@
 @section('judulhalaman', 'Data keranjangbelanja')
 
 @section('konten')
+<br><br>
     <h2>KERANJANG BELANJA</h2>
 	<a href="/keranjangbelanja/beli" class="btn btn-primary"> Beli Barang</a><br>
 
