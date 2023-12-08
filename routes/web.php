@@ -116,3 +116,11 @@ Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangBelanjaContro
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangBelanjaController@store');
 Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangBelanjaController@hapus');
 
+//route CRUD dari kabel
+Route::get('/kabel', 'App\Http\Controllers\kabelController@indexKabel');
+Route::get('/kabel/tambahKabel','App\Http\Controllers\kabelController@tambahKabel');
+Route::post('/kabel/store','App\Http\Controllers\kabelController@store');
+Route::get('/kabel/editKabel/{id}','App\Http\Controllers\kabelController@editKabel');
+Route::post('/kabel/update','App\Http\Controllers\kabelController@update');
+Route::get('/kabel/hapusKabel/{id}','App\Http\Controllers\kabelController@hapusKabel');
+
