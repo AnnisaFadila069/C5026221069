@@ -17,6 +17,7 @@
     <br>
 
 	<table class="table table-striped table-hover">
+        <thead class="thead-dark">>
 		<tr>
 			<th>NRP</th>
 			<th>Nama</th>
@@ -24,6 +25,7 @@
 			<th>IPK</th>
 			<th>Opsi</th>
 		</tr>
+        </thead>
 		@foreach($mahasiswa as $p)
 		<tr>
 			<td>{{ $p->NRP }}</td>
