@@ -17,7 +17,7 @@
     <br>
 
 	<table class="table table-striped table-hover">
-        <thead class="thead-dark">>
+        <thead class="thead-dark">
 		<tr>
 			<th>NRP</th>
 			<th>Nama</th>
