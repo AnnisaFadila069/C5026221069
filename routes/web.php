@@ -129,3 +129,13 @@ Route::get('/kabel/editKabel/{id}','App\Http\Controllers\kabelController@editKab
 Route::post('/kabel/update','App\Http\Controllers\kabelController@update');
 Route::get('/kabel/hapusKabel/{id}','App\Http\Controllers\kabelController@hapusKabel');
 
+//route CRUD dari mahasiswa
+Route::get('/mahasiswa', 'App\Http\Controllers\mahasiswaController@indexmahasiswa');
+Route::get('/mahasiswa/editmahasiswa/{id}','App\Http\Controllers\mahasiswaController@editmahasiswa');
+Route::post('/mahasiswa/update','App\Http\Controllers\mahasiswaController@update');
+Route::get('/mahasiswa/lihatmahasiswa/{id}','App\Http\Controllers\mahasiswaController@lihatmahasiswa');
+//seacrh
+Route::get('/mahasiswa/cari','App\Http\Controllers\mahasiswaController@cari');
+
+
+
